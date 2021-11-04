@@ -1,0 +1,35 @@
+.App {
+  width: 50%;
+  margin: auto;
+}
+
+*:focus {
+  outline: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.choicesList {
+  position: absolute;
+  background-color: white;
+  z-index: 10;
+  width: 150px;
+  height: auto;
+  max-height: 300px;
+  border: solid 1px;
+  overflow: scroll;
+  padding-inline-start: 0px;
+  margin: 0;
+  border-radius: 3px;
+}
+
+.inputSelect {
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+input {
+  width: 300px;
+}
