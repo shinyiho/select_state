@@ -4,7 +4,7 @@ const { graphqlHTTP } = require('express-graphql');
 const { buildSchema } = require('graphql');
 const app = express();
 const PORT = process.env.PORT || 5000;
-const client_folder = "./client/build";
+const client_folder = "./client-vue/dist";
 const stateInfo = require("./stateInfo.json")
 const stateNameArr = stateInfo.map(state => state.name)
 
