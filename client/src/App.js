@@ -9,9 +9,7 @@ function App() {
   const [input, setInput] = useState("");
   const [openChoicesList, setOpenChoicesList] = useState(false)
   const [center, setCenter] = useState({ lat: 31, lng: -97 });
-  const [filteredState, setFilteredState] = useState([]);
-  const [focus, setFocus] = useState("")
-  const pinkBG = { "backgroundColor": "pink" }
+  const [filteredState, setFilteredState] = useState(["Sdf", "wef"]);
   const render = (status) => {
     return <h1>{status}</h1>;
   };
@@ -80,9 +78,7 @@ function App() {
             {filteredState.map(state => <li
               key={state}
               onClick={() => changMapCenter(state)}
-              style={focus === state ? pinkBG : undefined}
-              onMouseOver={(e) => setFocus(e.target.innerHTML)}
-              onMouseOut={() => setFocus("")}>{state}</li>)}
+            >{state}</li>)}
           </ul>) : undefined}
       </div>
 
